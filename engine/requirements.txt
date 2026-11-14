@@ -1,0 +1,4 @@
+requests
+psutil
+scapy
+yara-python

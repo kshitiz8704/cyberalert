@@ -1,0 +1,26 @@
+{
+  "backend_url": "http://localhost:5001/api",
+  "api_key": "cyberalert-secret",
+  "modules": { "malware": true, "hids": true, "nids": true },
+
+  "malware": { "scan_dirs": ["demo/scan_folder"], "interval": 10, "entropy_threshold": 7.2 },
+
+  "hids": {
+    "watch_dirs": ["demo/watch_folder"],
+    "auth_log": "demo/auth_demo.log",
+    "interval": 5,
+    "failed_login_threshold": 5,
+    "failed_login_window": 60,
+    "bad_processes": ["mimikatz", "nc", "ncat", "netcat", "hydra", "john", "meterpreter", "psexec"]
+  },
+
+  "nids": {
+    "interface": null,
+    "window": 10,
+    "port_scan_ports": 15,
+    "syn_repeat": 30,
+    "icmp_flood": 40,
+    "dns_per_window": 100,
+    "bad_domains": ["evil.com", "malware.test", "badsite.xyz"]
+  }
+}
